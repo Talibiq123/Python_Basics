@@ -35,7 +35,6 @@ print(math.sin(rads))
 
 today = datetime.date.today()
 print(today)
-
 print(calendar.isleap(2023))
 
 print(os.getcwd())
