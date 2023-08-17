@@ -17,7 +17,7 @@
 # lst = [elem for i, elem in enumerate(list1)]
 # print(lst)
 
-lst = [1, 3, 2, 5, 4]
+# lst = [1, 3, 2, 5, 4]
 # for i in range(len(lst)):
 #     print(i, end=" ")
 # n = len(lst)
@@ -26,5 +26,38 @@ lst = [1, 3, 2, 5, 4]
 # print()
 # for i in range(n):
 #     print(i, end=" ")
+
+# s = 'frog'
+# print(s[3])
+
+# a = 10
+# help(a)
+
+string = 'Hello, World!'
+# string.split()
+print(string.split(sep=',')[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
