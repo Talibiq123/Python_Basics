@@ -73,15 +73,36 @@
 # mag = 'hello bijnor'
 # print(mag[:-1])
 
-a = "Hello, World!"
-print(a.upper())
-print(a)
+# a = "Hello, World!"
+# print(a.upper())
+# print(a)
+#
+# ans1 = a.replace('World!', 'Bijnor')
+# print(ans1)
+#
+# asn2 = a.split(' ')
+# print(asn2)
 
-ans1 = a.replace('World!', 'Bijnor')
-print(ans1)
 
-asn2 = a.split(' ')
-print(asn2)
+
+# arr = [1, 2, 3, 4, 5, 6, 7]
+# mid = len(arr) // 2
+# left = arr[:mid]
+# print(left)
+# print(len(arr))
+
+# empty list
+# empty_list = list()
+# print(empty_list, "is empty?")
+
+# Range of Negative Index
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[-4:-1])
+
+
+
+
+
 
 
 
