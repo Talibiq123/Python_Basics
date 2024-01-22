@@ -57,3 +57,49 @@
 # item_to_removed = 1
 # ans = [num for num in test_list if num != item_to_removed]
 # print(ans)
+
+
+# Dictionaries
+# my_dict = {"name": "Talib", "age": 26, "address": "Bijnor"}
+# print(my_dict)
+#
+# print(my_dict["name"])
+# name = my_dict.get('name')
+# print('get name', name)
+#
+# key_all = my_dict.keys()
+# print(key_all)
+#
+# values_all = my_dict.values()
+# print(values_all)
+#
+# my_dict["roll_no"] = "16DCS042"
+#
+# print(my_dict)
+#
+# items_list = my_dict.items()
+# print(items_list)
+
+# Dictionary Questions
+# Q.1 Remove element if given substrings are in values in a dictionary
+# Input :
+# test_dict = {1 : 'Gfg is best for geeks'}
+# sub_list = ['love', 'good'] ( Strings to check in values )
+# Output : {1: 'Gfg is best for geeks'}
+
+def remove_elements_with_substrings(input_dict, substrings):
+    output_dict = {}
+
+    for key, value in input_dict.items():
+        if not any(sub in value for sub in substrings):
+            output_dict[key] = value
+
+    return output_dict
+
+
+# Example usage:
+test_dict = {1: 'Gfg is best for geeks'}
+sub_list = ['love', 'good']
+
+result_dict = remove_elements_with_substrings(test_dict, sub_list)
+print(result_dict)
