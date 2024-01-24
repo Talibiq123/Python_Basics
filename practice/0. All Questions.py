@@ -87,19 +87,64 @@
 # sub_list = ['love', 'good'] ( Strings to check in values )
 # Output : {1: 'Gfg is best for geeks'}
 
-def remove_elements_with_substrings(input_dict, substrings):
-    output_dict = {}
-
-    for key, value in input_dict.items():
-        if not any(sub in value for sub in substrings):
-            output_dict[key] = value
-
-    return output_dict
+# def remove_elements_with_substrings(input_dict, substrings):
+#     output_dict = {}
+#
+#     for key, value in input_dict.items():
+#         if not any(sub in value for sub in substrings):
+#             output_dict[key] = value
+#
+#     return output_dict
 
 
 # Example usage:
-test_dict = {1: 'Gfg is best for geeks'}
-sub_list = ['love', 'good']
+# test_dict = {1: 'Gfg is best for geeks'}
+# sub_list = ['love', 'good']
+#
+# result_dict = remove_elements_with_substrings(test_dict, sub_list)
+# print(result_dict)
 
-result_dict = remove_elements_with_substrings(test_dict, sub_list)
-print(result_dict)
+
+# 2. Reverse Dictionary Keys Order
+# Input : {'gfg': 4, 'is': 2, 'best': 5}
+# Output : {'best': 5, 'is': 2, 'gfg': 4}
+
+# input_dict = {'gfg': 4, 'is': 2, 'best': 5}
+# output_dict = {key: value for key, value in reversed(input_dict.items())}
+# print(output_dict)
+
+
+# 3. Extract Unique values from dictionary values
+# Input: {'gfg': [5, 6, 7, 8], 'is': [10, 11, 7, 5], 'best': [6, 12, 10, 8], 'for': [1, 2, 5]}
+# Output: [1, 2, 5, 6, 7, 8, 10, 11, 12]
+
+# input_dict = {'gfg': [5, 6, 7, 8], 'is': [10, 11, 7, 5], 'best': [6, 12, 10, 8], 'for': [1, 2, 5]}
+# output_set = set()
+# for value_list in input_dict.values():
+#     for value in value_list:
+#         output_set.add(value)
+#
+# print(output_set)
+
+
+# 4. Sort Dictionary by sum of values
+# Input : test_dict = {'Gfg' : [6, 7, 4], 'best' : [7, 6, 5]}
+# Output : {'Gfg': 17, 'best': 18}
+
+# can't do it
+
+
+# 1. Check if a list contains an element
+
+# my_list = [1, 2, 3, 4, 5]
+
+# Check if the list contains a specific element
+# element_to_check = 3
+# if element_to_check in my_list:
+#     print(f"The list contains {element_to_check}.")
+# else:
+#     print(f"The list does not contain {element_to_check}.")
+
+
+
+# 2. Write a Python function to remove duplicates from a list while preserving the order.
