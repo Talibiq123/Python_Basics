@@ -148,15 +148,83 @@
 
 
 # 2. Write a Python function to remove duplicates from a list while preserving the order.
-
-
+# def remove_duplicate(input_list):
+#     seen = set()
+#     ans = []
+#     for num in input_list:
+#         if num not in seen:
+#             seen.add(num)
+#             ans.append(num)
+#
+#     return ans
+#
+# input_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+# answer = remove_duplicate(input_list)
+# print(answer)
 
 # if...elif...else
-a = 33
-b = 12
-if a > b:
-    print(" a is greater than b")
-elif a == b:
-    print("a is equal to b")
-else:
-    print("a is smaller than b")
+
+# a = 33
+# b = 12
+# if a > b:
+#     print(" a is greater than b")
+# elif a == b:
+#     print("a is equal to b")
+# else:
+#     print("a is smaller than b")
+
+
+# while loop
+
+# i = 1
+# while i < 6:
+#     print(i)
+#     i += 1
+
+# continue
+# i = 1
+# while i < 6:
+#     i += 1
+#     if i == 3:
+#         continue
+#     print(i)
+#
+#
+# i = 0
+# while i < 6:
+#   i += 1
+#   if i == 3:
+#     continue
+#   print(i)
+
+
+
+# 3. sort a list of dictionaries based on values of a key.
+# List of dictionaries
+# list_of_dicts = [
+#     {'name': 'Alice', 'age': 25},
+#     {'name': 'Bob', 'age': 30},
+#     {'name': 'Charlie', 'age': 22},
+#     {'name': 'David', 'age': 35}
+# ]
+#
+# # Sorting the list of dictionaries based on the 'age' key
+# sorted_list = sorted(list_of_dicts, key=lambda x: x['age'])
+#
+# # Displaying the sorted list
+# print(sorted_list)
+
+
+# 4.  find all the pairs in a list whose sum is equal to a given value
+def all_pairs(my_list, target_value):
+    result = list()
+    for i in range(len(my_list)):
+        for j in range(i+1, len(my_list)):
+            if my_list[i] + my_list[j] == target_value:
+                result.append((my_list[i], my_list[j]))
+    return result
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+target_value = 10
+ans = all_pairs(my_list, target_value)
+print(ans)
