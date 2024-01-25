@@ -148,3 +148,15 @@
 
 
 # 2. Write a Python function to remove duplicates from a list while preserving the order.
+
+
+
+# if...elif...else
+a = 33
+b = 12
+if a > b:
+    print(" a is greater than b")
+elif a == b:
+    print("a is equal to b")
+else:
+    print("a is smaller than b")
