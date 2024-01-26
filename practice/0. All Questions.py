@@ -216,15 +216,15 @@
 
 
 # 4.  find all the pairs in a list whose sum is equal to a given value
-def all_pairs(my_list, target_value):
-    result = list()
-    for i in range(len(my_list)):
-        for j in range(i+1, len(my_list)):
-            if my_list[i] + my_list[j] == target_value:
-                result.append((my_list[i], my_list[j]))
-    return result
-
-my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-target_value = 10
-ans = all_pairs(my_list, target_value)
-print(ans)
+# def all_pairs(my_list, target_value):
+#     result = list()
+#     for i in range(len(my_list)):
+#         for j in range(i+1, len(my_list)):
+#             if my_list[i] + my_list[j] == target_value:
+#                 result.append((my_list[i], my_list[j]))
+#     return result
+#
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# target_value = 10
+# ans = all_pairs(my_list, target_value)
+# print(ans)
