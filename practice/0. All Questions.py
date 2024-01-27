@@ -228,3 +228,173 @@
 # target_value = 10
 # ans = all_pairs(my_list, target_value)
 # print(ans)
+
+
+# 10. Write a function that returns the sum of multiples of 3 and 5 between 0 and n. For example, if n is 20,
+# it should return the sum of 3, 5, 6, 9, 10, 12, 15, 18, 20.
+# def multiple(n):
+#     sum = 0
+#     for i in range(1, n+1):
+#         if i % 3 == 0 and i % 5 == 0:
+#             sum += i
+#
+#     return sum
+#
+#
+# num = int(input("Enter a number "))
+# ans = multiple( num )
+# print("The sum of Multiple of 3 and 5 is ", num, ".")
+
+# Write a function that prints all the prime numbers between 0 and n
+# def print_prime(n):
+#     prime = []
+#     for num in range(2, n+1):
+#         is_prime = True
+#
+#         for i in range(2, int(num ** 0.5) + 1):
+#             if num % i == 0:
+#                 is_prime = False
+#                 break
+#
+#         if is_prime:
+#             prime.append(num)
+#     return  prime
+#
+#
+# num = int(input("Enter a number : "))
+# ans = print_prime(num)
+# print(ans)
+
+
+# 8. Write a function called fizz_buzz that takes a number.
+# If the number is divisible by 3, it should return “Fizz”.
+# If it is divisible by 5, it should return “Buzz”.
+# If it is divisible by both 3 and 5, it should return “FizzBuzz”.
+# Otherwise, it should return the same number.
+
+# def fizz_buzz(n):
+#     if n % 3 == 0 and n % 5 == 0:
+#         return "FizzBuzz"
+#     elif n % 3 == 0:
+#         return "Fizz"
+#     elif n % 5 == 0:
+#         return "Fizz"
+#     else:
+#         return n
+#
+#
+# num = int(input("Enter a number : "))
+# ans = fizz_buzz(num)
+# print(ans)
+
+
+# 7. Convert a full name to snake case.
+# For Eg: str = "Zaheen Malik", output -> "zaheen_malik"
+# def convert_name(naam):
+#     res = ""
+#     parts = naam.split()
+#     res = "_".join(part.lower() for part in parts)
+#     return res
+#
+#
+# name = input("Enter a name: ")
+# ans = convert_name(name)
+# print(ans)
+
+# using RegEx
+# import re
+#
+#
+# full_name = input("Enter your name : ")
+# ans = re.sub("\s", "_", full_name).lower()
+# print(ans)
+
+
+# 6. Write a Program to extract each digit from an integer in the reverse order.
+# For example-, If the given int is 7536, the output shall be “6 3 5 7“,
+# def reverse_order(n):
+#     lst = []
+#     while n > 0:
+#         lst.append(n%10)
+#         n = n//10
+#     return lst
+#
+#
+# inp = 7536
+# ans = reverse_order(inp)
+# print(ans)
+
+
+# def extract_digits_reverse(num):
+#     # Convert the number to a string and reverse it
+#     num_str = str(num)[::-1]
+#
+#     # Print each digit separated by space
+#     print(" ".join(num_str))
+#
+# # Test the function
+# num = int(input("Enter an integer: "))
+# extract_digits_reverse(num)
+
+# second method
+# num_str = str("4321")[::-1]
+# print(" ".join(num_str))
+
+
+# 5. Return the count of a given substring from a string
+# how many times substring “Emma” appears in the given string.
+# Given:
+# str_x = "Emma is good developer. Emma is a writer"
+
+# str_x = "Emma is good developer. Emma is a writer"
+# list1 = list(str_x.split())
+# count = 0
+# for item in list1:
+#     if item == "Emma":
+#         count += 1
+#
+#
+# print(count)
+
+
+# second method
+# str_x = "Emma is good developer. Emma is a writer"
+# ans = str_x.count("Emma")
+# print(ans)
+
+
+# 4. Display numbers divisible by 5 from a list
+# list1 = [2, 5, 7, 10, 15, 20]
+# ans = list()
+# for item in list1:
+#     if item % 5 == 0:
+#         ans.append(item)
+#
+# print(ans)
+
+
+# 3. Check if the first and last number of a list is the same
+# nums = [1, 2, 3, 2, 2]
+# if nums[0] == nums[len(nums) - 1]:
+#     print("Yes")
+# else:
+#     print("No")
+
+
+# 2. Remove first n characters from a string
+# remove_chars("pynative", 4) so output must be tive
+# def remove_chars(str1, n):
+#     return str1[n:]
+#
+#
+# inp_str = input("Enter a string : ")
+# inp_num = int(input("Enter a number : "))
+# ans = remove_chars(inp_str, inp_num)
+# print(ans)
+
+
+# 1. Print characters from a string that are present at an even index number
+# For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.
+str = "pynative"
+list_str = list(str)
+print(list_str[0: : 2])
