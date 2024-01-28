@@ -395,6 +395,24 @@
 
 # 1. Print characters from a string that are present at an even index number
 # For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.
-str = "pynative"
-list_str = list(str)
-print(list_str[0: : 2])
+# str = "pynative"
+# list_str = list(str)
+# print(list_str[0: : 2])
+
+# Write a Python program to multiply all the items in a list.
+# list_1 = [1, 2, 3, 4, 5]
+# ans = 1
+# for item in list_1:
+#     ans = ans * item
+#
+# print(ans)
+
+# Write a Python program to get the smallest number from a list.
+# list1 = [5, 3, 8, 1, 3, 4]
+# list1.sort()
+# print(list1[0])
+
+# Write a Python program to remove duplicates from a list.
+# list1 = [1, 1, 2, 2, 3, 4, 4, 4, 5, 6, 6]
+# ans = set(list1)
+# print(ans)
