@@ -416,3 +416,13 @@
 # list1 = [1, 1, 2, 2, 3, 4, 4, 4, 5, 6, 6]
 # ans = set(list1)
 # print(ans)
+
+# Write a Python program to sort a list without using sort function
+# Bubble Sort
+nums = [3, 1, 9, 8, 5, 7, 4, 6, 2]
+for i in range(0, len(nums)):
+    for j in range(0, len(nums)-1):
+        if nums[j] > nums[j+1]:
+            nums[j], nums[j+1] = nums[j+1], nums[j]
+
+print(nums)
