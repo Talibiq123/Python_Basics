@@ -60,7 +60,7 @@
 
 
 # Dictionaries
-# my_dict = {"name": "Talib", "age": 26, "address": "Bijnor"}
+# my_dict = {"name": "Michael", "age": 26, "address": "California"}
 # print(my_dict)
 #
 # print(my_dict["name"])
@@ -141,10 +141,9 @@
 # Check if the list contains a specific element
 # element_to_check = 3
 # if element_to_check in my_list:
-#     print(f"The list contains {element_to_check}.")
+#     print(f"The list contains {element_to_check}")
 # else:
-#     print(f"The list does not contain {element_to_check}.")
-
+#     print(f"The list does not contain {element_to_check}")
 
 
 # 2. Write a Python function to remove duplicates from a list while preserving the order.
@@ -164,14 +163,14 @@
 
 # if...elif...else
 
-# a = 33
-# b = 12
-# if a > b:
-#     print(" a is greater than b")
-# elif a == b:
-#     print("a is equal to b")
+# an = 33
+# bn = 12
+# if an > bn:
+#     print(" an is greater than bn")
+# elif an == bn:
+#     print("an is equal to bn")
 # else:
-#     print("a is smaller than b")
+#     print("an is smaller than bn")
 
 
 # while loop
@@ -196,7 +195,6 @@
 #   if i == 3:
 #     continue
 #   print(i)
-
 
 
 # 3. sort a list of dictionaries based on values of a key.
@@ -289,7 +287,7 @@
 
 
 # 7. Convert a full name to snake case.
-# For Eg: str = "Zaheen Malik", output -> "zaheen_malik"
+# For Eg: str = "Barack Obama", output -> "barack_obama"
 # def convert_name(naam):
 #     res = ""
 #     parts = naam.split()
@@ -419,10 +417,48 @@
 
 # Write a Python program to sort a list without using sort function
 # Bubble Sort
-nums = [3, 1, 9, 8, 5, 7, 4, 6, 2]
-for i in range(0, len(nums)):
-    for j in range(0, len(nums)-1):
-        if nums[j] > nums[j+1]:
-            nums[j], nums[j+1] = nums[j+1], nums[j]
+# nums = [3, 1, 9, 8, 5, 7, 4, 6, 2]
+# for i in range(0, len(nums)):
+#     for j in range(0, len(nums)-1):
+#         if nums[j] > nums[j+1]:
+#             nums[j], nums[j+1] = nums[j+1], nums[j]
+#
+# print(nums)
 
-print(nums)
+# Selection Sort
+# nums = [3, 1, 9, 8, 5, 7, 4, 6, 2]
+# for i in range(0, len(nums)):
+#     for j in range(0, len())
+
+# Write a python program to print a specified list after removing 0th, 4th, 5th elements.
+# num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# num_list.pop(0)
+# num_list.pop(4)
+# num_list.pop(5)
+# print(num_list)
+
+# second method
+# def remove_elements(nums):
+#     element_to_remove = [0, 4, 5]
+#     modified_list = [item for i, item in enumerate(nums) if i not in element_to_remove]
+#     return modified_list
+
+
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# ans = remove_elements(nums)
+# print(ans)
+# Write a python function that takes two lists and returns True if they have at least one common member.
+def check_common_member(first_list, second_list):
+    for item in first_list:
+        if item in second_list:
+            return True
+    return False
+
+
+first_list = [1, 2, 3, 4]
+second_list = [4, 6, 7, 8]
+ans = check_common_member(first_list, second_list)
+if ans:
+    print("There is common element.")
+else:
+    print("No common element")
