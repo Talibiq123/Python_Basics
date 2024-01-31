@@ -448,17 +448,29 @@
 # ans = remove_elements(nums)
 # print(ans)
 # Write a python function that takes two lists and returns True if they have at least one common member.
-def check_common_member(first_list, second_list):
-    for item in first_list:
-        if item in second_list:
-            return True
-    return False
+# def check_common_member(first_list, second_list):
+#     for item in first_list:
+#         if item in second_list:
+#             return True
+#     return False
+#
+#
+# first_list = [1, 2, 3, 4]
+# second_list = [4, 6, 7, 8]
+# ans = check_common_member(first_list, second_list)
+# if ans:
+#     print("There is common element.")
+# else:
+#     print("No common element")
+
+# class and object in python
+class MyClass:
+    def __init__(self, initial_value):
+        self.my_variable = initial_value
+
+    def get_my_variable(self):
+        return self.my_variable
 
 
-first_list = [1, 2, 3, 4]
-second_list = [4, 6, 7, 8]
-ans = check_common_member(first_list, second_list)
-if ans:
-    print("There is common element.")
-else:
-    print("No common element")
+obj = MyClass(10)
+print(obj.get_my_variable())
