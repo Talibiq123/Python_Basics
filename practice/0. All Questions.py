@@ -474,3 +474,87 @@ class MyClass:
 
 obj = MyClass(10)
 print(obj.get_my_variable())
+
+# classes amd objects
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+# Creating objects
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Max", 5)
+
+# Accessing object attributes
+print(f"{dog1.name} is {dog1.age} years old.")
+dog2.bark()
+
+# Encapsulation
+class BankAccount:
+    def __init__(self):
+        self.balance = 0  # Public attribute
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def _withdraw(self, amount):  # Protected method
+        self.balance -= amount
+
+    def get_balance(self):
+        return self.balance
+
+account = BankAccount()
+account.deposit(1000)
+account._withdraw(200)  # Can access protected method (though it's conventionally protected)
+print(account.get_balance())  # Output: 800
+
+# Inheritance
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        raise NotImplementedError("Subclass must implement abstract method")
+
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} says meow!"
+
+dog = Dog("Buddy")
+cat = Cat("Fluffy")
+
+print(dog.speak())  # Output: Buddy says woof!
+print(cat.speak())  # Output: Fluffy says meow!
+
+# Polymorphism
+class Shape:
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+shapes = [Rectangle(4, 5), Circle(3)]
+for shape in shapes:
+    print(f"Area: {shape.area()}")
+
+#
