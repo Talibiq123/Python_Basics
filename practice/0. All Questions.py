@@ -564,26 +564,90 @@
 # print(first_list)
 
 # Python program to find second largest element in a list
-def find_second_largest(numbers):
-    if len(numbers) < 2:
-        return "List must contain at least two numbers"
-
-    largest = second_largest = float('-inf')
-
-    for num in numbers:
-        if num > largest:
-            second_largest = largest
-            largest = num
-        elif num > second_largest and num != largest:
-            second_largest = num
-
-    if second_largest == float('-inf'):
-        return "There is no second largest element"
-
-    return second_largest
+# def find_second_largest(numbers):
+#     if len(numbers) < 2:
+#         return "List must contain at least two numbers"
+#
+#     largest = second_largest = float('-inf')
+#
+#     for num in numbers:
+#         if num > largest:
+#             second_largest = largest
+#             largest = num
+#         elif num > second_largest and num != largest:
+#             second_largest = num
+#
+#     if second_largest == float('-inf'):
+#         return "There is no second largest element"
+#
+#     return second_largest
 
 
 # Example usage:
-numbers = [10, 20, 4, 45, 99]
-print("Second largest number:", find_second_largest(numbers))
+# numbers = [10, 20, 4, 45, 99]
+# print("Second largest number:", find_second_largest(numbers))
 
+
+ANKIT KOCHAR
+AUGUST 31, 2022
+Last Updated on February 27, 2023 by Sumit Kumar
+
+
+
+Python is a beginner friendly programming language. It has very simple and easy syntax compared to other programming languages. Python has many advantages like it supports a large variety of packages and modules which makes complicated tasks more flexible. Python is one of the most widely used coding languages in the world. Python is used in web development, machine learning, web scraping and web automation and lots more in other fields. Let’s discuss the Coding Questions related to the basic Python programming language in detail.
+
+Write a program to print the given number is odd or even.
+ Python
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+Write a program to find the given number is positive or negative.
+ Python
+num = float(input("Enter a number: "))
+# Input: 1.2
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
+#output: Positive number
+Write a program to find the sum of two numbers.
+ Python
+num1 = int(input("Enter Number1: "))
+# Input1 : 21
+num2 = int(input("Enter Number2: "))
+#  Input2 : 11
+print("sum of given numbers is:", num1 + num2)
+#  Output2 : 32
+# Write a program to find if the given number is prime or not.
+# num = int(input("enter a number: "))
+# # input: 23
+# flag = False
+# if num > 1:
+#     for i in range(2, num):
+#         if (num % i) == 0:
+#             flag = True
+#             break
+# if flag:
+#     print(num, "is not a prime number")
+# else:
+#     print(num, "is a prime number")
+# 23 is a prime number
+
+# Write a program to check if the given number is palindrome or not.
+# num = int(input("Enter a number: "))
+# # Input: 12321
+# temp = num
+# reverse = 0
+# while temp > 0:
+#     remainder = temp % 10
+#     reverse = (reverse * 10) + remainder
+#     temp = temp // 10
+# if num == reverse:
+#   print('Palindrome')
+# else:
+#   print("Not Palindrome")
+# Output: Palindrome
