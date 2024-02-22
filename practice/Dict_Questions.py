@@ -33,10 +33,28 @@
 # ans = sorted(my_list)
 # print(ans)
 
-my_dict = {'b': 3, 'a': 1, 'c': 2}
-sorted_keys = sorted(my_dict.keys())
-sorted_dict = {i: my_dict[i] for i in sorted_keys}
-print(sorted_dict)
+# my_dict = {'b': 3, 'a': 1, 'c': 2}
+# sorted_keys = sorted(my_dict.keys())
+# sorted_dict = {i: my_dict[i] for i in sorted_keys}
+# print(sorted_dict)
 
 # for key in sorted_keys:
 #     print(key, my_dict[key])
+
+
+# Best Method
+# my_dict = {'b': 3, 'a': 1, 'c': 2}
+# ans = {key: my_dict[key] for key in sorted(my_dict.keys())}
+# print(ans)
+
+
+
+# Sorting a dictionary using values
+# my_dict = {'b': 3, 'a': 1, 'c': 2}
+# sorted_values = sorted(my_dict.values())
+# ans_dict = {k: v for k, v in sorted(my_dict.items(), key=lambda item: item[1])}
+# print(ans_dict)
+# check = sorted(my_dict.items())
+
+
+
