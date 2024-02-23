@@ -48,7 +48,6 @@
 # print(ans)
 
 
-
 # Sorting a dictionary using values
 # my_dict = {'b': 3, 'a': 1, 'c': 2}
 # sorted_values = sorted(my_dict.values())
@@ -56,5 +55,70 @@
 # print(ans_dict)
 # check = sorted(my_dict.items())
 
+# Handling missing keys in Dictionaries
+# Using if...else
+# my_dict = {1: "A", 2: "B", 3: "C", 4: "D", 5: "E"}
+# if 5 in my_dict:
+#     print(my_dict[5])
+# else:
+#     print("Not Found...")
+
+# Using get()
+# print(my_dict.get(3, "Not Found"))
+
+# Using setdefault()
+# my_dict.setdefault(6, "F")
+# print(my_dict.get(6))
+
+# Using defaultDict
+# from collections import defaultdict
+# count_dict = defaultdict(int)
+# count_dict["Apple"] += 1
+# count_dict["Banana"] += 1
+# print(count_dict)
+
+# fruit_dict = defaultdict(list)
+# fruit_dict['red'].append('Apple')
+# fruit_dict['yellow'].append('Banana')
+# fruit_dict['red'].append('Cheery')
+# print(fruit_dict)
+
+# Using Try-Except Block
+# my_dict1 = {'Aman': 21, 'Bilal': 26, 'Danish': 29}
+# try:
+#     print(my_dict1["Bilal"])
+#     print(my_dict1['Faizan'])
+# except:
+#     print('Not Found')
+
+# Python dictionary with keys having multiple values
+# my_dict1 = {}
+# x, y, z = 10, 20, 30
+# my_dict1[x, y, z] = x + y -z
+# x, y, z = 12, 25, 15
+# my_dict1[x, y, z] = x + y - z
+# print(my_dict1)
+
+# python program to find sum of all items in a dictionary
+# def returnSum(my_dict1):
+#     list1 = []
+#     for i in my_dict1:
+#         list1.append(my_dict1[i])
+#
+#     res = sum(list1)
+#     return res
+#
+# my_dict1 = {'a': 100, 'b':200, 'c':300}
+# print("Sum is ", returnSum(my_dict1))
+
+ # Second Method
+ def my_sum():
+     for i in my_dict_2.values():
+         sum_ans += i
+
+     return sum_ans
 
 
+ my_dict_2 = {'a': 10, 'b': 20, 'c': 70}
+ ans = my_sum(my_dict_2)
+ print(ans)
