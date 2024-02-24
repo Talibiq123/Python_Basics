@@ -112,13 +112,13 @@
 # print("Sum is ", returnSum(my_dict1))
 
  # Second Method
- def my_sum():
-     for i in my_dict_2.values():
-         sum_ans += i
+# Sample dictionary
+# my_dict = {'a': 5, 'b': 2, 'c': 7, 'd': 1}
+# total_sum = sum(my_dict.values())
+# print("Sum of all values:", total_sum)
 
-     return sum_ans
-
-
- my_dict_2 = {'a': 10, 'b': 20, 'c': 70}
- ans = my_sum(my_dict_2)
- print(ans)
+# In python, merging two dictionaries
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+dict1.update(dict2)
+print("Merged dictionary:", dict1)
