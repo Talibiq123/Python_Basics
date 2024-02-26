@@ -38,4 +38,25 @@ Amount = principal * (pow((1 + rate / 100), time))
 CI = Amount - principal
 print('Compound interest is ', CI)
 
-#
+# Program to check armstrong number
+def is_armstrong(number):
+    num_digits = len(str(number))
+    total = 0
+    temp = number
+    while temp > 0:
+        digit = temp % 10
+        total += digit ** num_digits
+        temp //= 10
+
+    if number == total:
+        return True
+    else:
+        return False
+
+
+num = int(input("Enter a number => "))
+if is_armstrong(num):
+    print(num, " is armstrong number.")
+else:
+    print(num, " is not armstrong number.")
+
