@@ -60,3 +60,7 @@ if is_armstrong(num):
 else:
     print(num, " is not armstrong number.")
 
+# Python 3 code to find sum of elements in given array
+arr = [12, 3, 4, 15]
+ans = sum(arr)
+print('Sum of the array is ', ans)
